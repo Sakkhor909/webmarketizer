@@ -1,0 +1,57 @@
+/* Sidebar css */
+
+aside {
+  width: 7vw;
+  align-self: flex-start;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 7px 0;
+  .nav-button {
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    color: var(--black);
+    position: relative;
+    @include tool-tip(
+      $clip-path: polygon(100% 0%, 100% 55%, 100% 100%, 15% 100%, 0% 50%, 15% 0)
+    );
+    i {
+      font-size: 2rem;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      border-bottom: 1px solid var(--Primary-color);
+      i {
+        color: var(--Primary-color);
+      }
+    }
+  }
+  .active {
+    border-bottom: 1px solid var(--Primary-color);
+    i {
+      color: var(--Primary-color);
+    }
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  aside {
+    width: 100%;
+    display: flex;
+    .nav-button {
+      display: inline;
+      padding: 10px;
+      &:last-child {
+        border-bottom: 1px solid var(--black);
+      }
+    }
+  }
+}

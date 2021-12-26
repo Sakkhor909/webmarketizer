@@ -1,0 +1,61 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Declearing variable */
+:root {
+  --body-background-color: #f0f2f5;
+  --Primary-color: #0aa0f6;
+  --black: #263238;
+}
+/* Selecting font */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  background-color: var(--body-background-color);
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+@import 'mixins';
+
+@import 'header';
+
+@import 'sidebar';
+
+.main {
+  display: flex;
+}
+
+.content {
+  width: 93vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+    .hero-img {
+      width: 100%;
+    }
+  }
+}
