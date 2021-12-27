@@ -1,3 +1,5 @@
-{{outlet}}
+{{#each this.model.NavigationMenues as |NavigationMenue|}}
+  <li>{{NavigationMenue}}</li>
+{{/each}}
 
-<Sidebar @color={{this.color}} @onChangeColor={{this.onChangeColor}} />
+{{outlet}}

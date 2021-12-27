@@ -1,8 +1,3 @@
 import Controller from '@ember/controller';
-import { action } from '@ember/object';
-export default class IndexController extends Controller {
-  @action
-  onClickNav() {
-    alert('working on it');
-  }
-}
+
+export default class IndexController extends Controller {}

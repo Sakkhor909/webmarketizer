@@ -1,1 +1,12 @@
-{{outlet}}
+{{page-title 'Web Marketizer'}}
+<Header />
+<div class='main'>
+
+  <Sidebar @onClickNav={{this.onClickNav}} />
+
+  <div class='content'>
+
+    {{outlet}}
+
+  </div>
+</div>

@@ -11,4 +11,8 @@ Router.map(function () {
     this.route('service', { path: '/:service_slug' });
   });
   this.route('not-found', { path: '/*path' });
+  this.route('reviews');
+  this.route('clients');
+  this.route('about');
+  this.route('contact');
 });

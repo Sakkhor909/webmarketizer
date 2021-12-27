@@ -3,5 +3,10 @@
 Services index page work in process
 
 <div>Back to <LinkTo @route='index'> Home </LinkTo> </div>
+<ul>
+  {{#each this.model.NavigationMenues as |NavigationMenue|}}
+    <li>{{NavigationMenue}}</li>
+  {{/each}}
+</ul>
 
 {{outlet}}
