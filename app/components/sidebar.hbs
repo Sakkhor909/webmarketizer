@@ -1,21 +1,51 @@
 {{!-- {{yield}} --}}
 <aside>
-  <button class='nav-button active' data-tooltip='Home' type='button'>
+  <button
+    class='nav-button active'
+    {{on 'click' @onClickNav}}
+    data-tooltip='Home'
+    type='button'
+  >
     <i class='fas fa-house-user'></i>
   </button>
-  <button class='nav-button' data-tooltip='Services' type='button'>
+  <button
+    class='nav-button'
+    {{on 'click' @onClickNav}}
+    data-tooltip='Services'
+    type='button'
+  >
     <i class='fas fa-concierge-bell'></i>
   </button>
-  <button class='nav-button' data-tooltip='Reviews' type='button'>
+  <button
+    class='nav-button'
+    {{on 'click' @onClickNav}}
+    data-tooltip='Reviews'
+    type='button'
+  >
     <i class='fas fa-comment-dots'></i>
   </button>
-  <button class='nav-button' data-tooltip='Clients' type='button'>
+  <button
+    class='nav-button'
+    {{on 'click' @onClickNav}}
+    data-tooltip='Clients'
+    type='button'
+  >
     <i class='fas fa-users'></i>
   </button>
-  <button class='nav-button' data-tooltip='About' type='button'>
+  <button
+    class='nav-button'
+    {{on 'click' @onClickNav}}
+    data-tooltip='About'
+    type='button'
+  >
     <i class='fas fa-id-card-alt'></i>
   </button>
-  <button class='nav-button' data-tooltip='Contact' type='button'>
+  <button
+    class='nav-button'
+    {{on 'click' @onClickNav}}
+    data-tooltip='Contact'
+    type='button'
+  >
     <i class='fas fa-phone'></i>
   </button>
 </aside>
