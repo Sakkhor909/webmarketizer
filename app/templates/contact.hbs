@@ -1,2 +1,40 @@
-{{page-title "Contact"}}
-{{outlet}}
+{{page-title 'Contact'}}
+
+<form class='contact-form'>
+  <div class='form-group'>
+    <label for='Name-input'>Name</label>
+    <input
+      class='form-control'
+      type='text'
+      name='Name'
+      id='Name-input'
+      placeholder='Enter your name here'
+    />
+  </div>
+  <div class='form-group'>
+    <label for='Email-input'>Email</label>
+    <input
+      class='form-control'
+      type='email'
+      name='Email'
+      id='Email-input'
+      placeholder='Enter your email here'
+    />
+  </div>
+  <div class='form-group'>
+
+    <label for='Massage-input'>Massage</label>
+    <textarea
+      name='Massage'
+      id='Massage-input'
+      cols='30'
+      rows='10'
+      placeholder='Enter your massage here'
+    ></textarea>
+  </div>
+
+  <input class='submit-btn' type='submit' value='Send' />
+
+</form>
+
+{{!-- {{outlet}} --}}
