@@ -17,8 +17,7 @@ aside {
     text-align: center;
     border-bottom: 1px solid var(--black);
     color: var(--black);
-    position: relative;
-    @include tool-tip();
+
     i {
       font-size: 2rem;
     }
@@ -41,6 +40,15 @@ aside {
     i {
       color: var(--Primary-color);
     }
+  }
+}
+
+/* Only for desktop devices */
+
+@media only screen and (min-width: 1024px) {
+  .nav-button {
+    position: relative;
+    @include tool-tip();
   }
 }
 

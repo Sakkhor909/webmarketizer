@@ -44,3 +44,11 @@
     cursor: pointer;
   }
 }
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  .contact-form {
+    width: 90%;
+    margin-top: 15px;
+  }
+}
