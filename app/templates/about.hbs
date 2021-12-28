@@ -1,2 +1,10 @@
-{{page-title "About"}}
+{{page-title 'About'}}
+<ul>
+  {{#each this.model as |person|}}
+    <li> Hello, {{person}}!</li>
+  {{else}}
+    Sorry, nobody is here.
+  {{/each}}
+</ul>
+
 {{outlet}}

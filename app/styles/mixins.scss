@@ -1,28 +1,27 @@
 /* tooltip */
 
 @mixin tool-tip(
-  $translateX: 88%,
-  $translateY: -45%,
+  $translateX: 50%,
+  $translateY: -15%,
   $transform-origin: center right,
-  $clip-path
+  $width: 100%,
+  $z-index: -1
 ) {
   &::before {
     content: attr(data-tooltip);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-45%) scale(0);
-    transition: 450ms transform;
+    width: $width;
+    transform: translateX(-50%) translateY(-17%) scale(0);
+    transition: 700ms transform;
     transform-origin: $transform-origin;
-    z-index: 3;
+    z-index: $z-index;
     font-size: 1rem;
     color: whitesmoke;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 0.3rem;
     text-align: center;
-    width: max-content;
+
     background-color: var(--black);
-    clip-path: $clip-path;
   }
   &:hover::before {
     transform: translateX($translateX) translateY($translateY) scale(1);

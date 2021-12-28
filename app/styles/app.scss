@@ -7,14 +7,15 @@
 
 /* Declearing variable */
 :root {
-  --body-background-color: #f0f2f5;
+  --body-background-color: #f9f9f9;
   --Primary-color: #0aa0f6;
-  --black: #263238;
+  --black: #222222;
 }
 /* Selecting font */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
+  color: var(--black);
   background-color: var(--body-background-color);
 }
 
@@ -24,11 +25,23 @@ button {
   background-color: transparent;
 }
 
+a,
+a:active,
+a:visited {
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+}
+
 @import 'mixins';
 
 @import 'header';
 
 @import 'sidebar';
+
+@import 'services';
 
 .main {
   display: flex;
@@ -39,6 +52,43 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 /* Mobile devices */
@@ -57,17 +107,5 @@ button {
     .hero-img {
       width: 100%;
     }
-  }
-}
-
-.red {
-  i {
-    color: red;
-  }
-}
-
-.green {
-  i {
-    color: green;
   }
 }

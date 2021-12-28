@@ -3,6 +3,15 @@ header {
   width: 100%;
   padding: 1rem;
   background-color: white;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.3)
+  );
+  z-index: 3;
+  backdrop-filter: blur(2rem);
+  border: 2px solid transparent;
+  background-clip: padding-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
@@ -45,15 +54,15 @@ header {
     }
     .tooltip-fiverr {
       position: relative;
-      @include tool-tip(-37%, 75%, center bottom, '');
+      @include tool-tip(-30%, 95%, center bottom, max-content, 3);
     }
     .tooltip-fb {
       position: relative;
-      @include tool-tip(-85%, 80%, center bottom, '');
+      @include tool-tip(-70%, 95%, center bottom, max-content, 3);
     }
     .tooltip-linkedin {
       position: relative;
-      @include tool-tip(-90%, 80%, center bottom, '');
+      @include tool-tip(-85%, 95%, center bottom, max-content, 3);
     }
   }
 }
