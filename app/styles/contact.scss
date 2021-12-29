@@ -1,54 +1,76 @@
-.contact-form {
-  width: 50%;
-  background-color: white;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.3)
-  );
-  backdrop-filter: blur(2rem);
-  border: 2px solid transparent;
-  background-clip: padding-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.contact-page-layout {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  margin-top: 50px;
-  .form-group {
+  padding: 10px 100px 0 100px;
+  .contact-form {
+    width: 50%;
+    height: fit-content;
+    background-color: white;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(2rem);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
-    label {
-      margin: 10px 0;
-    }
-    .form-control {
-      padding: 10px;
-      &:focus {
+    padding: 20px;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin: 10px 0;
+      }
+      .form-control {
+        padding: 10px;
         outline: none;
-        border: 1px solid var(--Primary-color);
+        border: 1px solid var(--black);
+        &:focus {
+          outline: none;
+          border: 1px solid var(--Primary-color);
+        }
+      }
+      #Massage-input {
+        resize: none;
+        padding: 10px;
+        &:focus {
+          outline: none;
+          border: 1px solid var(--Primary-color);
+        }
       }
     }
-    #Massage-input {
-      resize: none;
+    .submit-btn {
+      margin-top: 10px;
       padding: 10px;
-      &:focus {
-        outline: none;
-        border: 1px solid var(--Primary-color);
+      background-color: var(--Primary-color);
+      border: none;
+      cursor: pointer;
+      color: whitesmoke;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      &:hover {
+        background-color: green;
       }
     }
   }
-  .submit-btn {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: var(--Primary-color);
-    border: none;
-    cursor: pointer;
+  .contact-us-img {
+    width: 50%;
   }
 }
 
 /* Mobile devices */
 @media only screen and (max-width: 768px) {
-  .contact-form {
-    width: 90%;
-    margin-top: 15px;
+  .contact-page-layout {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+    .contact-form {
+      width: 90%;
+      margin-top: 15px;
+    }
   }
 }

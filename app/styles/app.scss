@@ -19,6 +19,12 @@ body {
   background-color: var(--body-background-color);
 }
 
+@media (orientation: landscape) {
+  body {
+    overflow: hidden;
+  }
+}
+
 button {
   border: none;
   outline: none;
@@ -99,6 +105,11 @@ a {
 
 /* Mobile devices */
 @media only screen and (max-width: 768px) {
+  @media (orientation: portrait) {
+    body {
+      overflow: auto;
+    }
+  }
   .main {
     flex-direction: column;
   }
