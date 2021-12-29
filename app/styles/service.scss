@@ -1,0 +1,16 @@
+.single-service-layout {
+  display: flex;
+  margin-top: 40px;
+  .content-section {
+    width: 70%;
+    padding: 20px;
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  }
+  .single-service-img {
+    width: 30%;
+    padding: 10px;
+  }
+}
