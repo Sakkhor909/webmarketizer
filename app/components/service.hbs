@@ -1,0 +1,15 @@
+{{!-- {{yield}} --}}
+
+<LinkTo
+  class='service-container'
+  @route='services.service'
+  @model={{@service.link}}
+>
+  <Service::Image
+    class='services-img'
+    src={{@service.image}}
+    alt={{@service.ServiceName}}
+  />
+  <h2>{{@service.ServiceName}}</h2>
+  <p>{{@service.content}}</p>
+</LinkTo>

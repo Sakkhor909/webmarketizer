@@ -1,5 +1,9 @@
 'use strict';
 
+const {
+  DEFAULT_IGNORED_PROPERTIES,
+} = require('eslint-plugin-ember/lib/rules/avoid-leaking-state-in-ember-objects');
+
 module.exports = {
   root: true,
   parser: 'babel-eslint',
@@ -20,7 +24,20 @@ module.exports = {
   env: {
     browser: true,
   },
-  rules: { 'prettier/prettier': ['error', { endOfLine: 'auto' }] },
+  rules: {
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'ember/avoid-leaking-state-in-ember-objects': [
+      'error',
+      [
+        ...DEFAULT_IGNORED_PROPERTIES,
+        'array',
+        'of',
+        'ignored',
+        'properties',
+        'persistenceSettings',
+      ],
+    ],
+  },
   overrides: [
     // node files
     {
@@ -48,6 +65,17 @@ module.exports = {
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
         'node/no-unpublished-require': 'off',
+        'ember/avoid-leaking-state-in-ember-objects': [
+          'error',
+          [
+            ...DEFAULT_IGNORED_PROPERTIES,
+            'array',
+            'of',
+            'ignored',
+            'properties',
+            'persistenceSettings',
+          ],
+        ],
       },
     },
     {

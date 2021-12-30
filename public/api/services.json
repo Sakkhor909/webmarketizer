@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "ServiceName": "Graphic Design",
+      "link": "graphic-design",
+      "content": "content from route Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
+      "image": "./assets/images/graphic_designer.gif"
+    },
+    {
+      "ServiceName": "Web Development",
+      "link": "web-development",
+      "content": "content from route Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
+      "image": "./assets/images/web_developer.gif"
+    },
+    {
+      "ServiceName": "Digital Marketing",
+      "link": "digital-marketing",
+      "content": "content from route Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
+      "image": "./assets/images/digital_marketer.gif"
+    }
+  ]
+}

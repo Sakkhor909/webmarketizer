@@ -3,42 +3,54 @@
 <div class='contact-page-layout'>
   <form class='contact-form'>
     <div class='form-group'>
-      <label for='Name-input'>Name</label>
-      <input
+      <label for={{this.user.name}}>Name</label>
+      <Input
         class='form-control'
-        type='text'
+        @type='text'
+        @value={{this.user.name}}
         name='Name'
-        id='Name-input'
         placeholder='Enter your name here'
+        required
       />
     </div>
     <div class='form-group'>
-      <label for='Email-input'>Email</label>
-      <input
+      <label for={{this.user.email}}>Email</label>
+      <Input
         class='form-control'
-        type='email'
+        @type='email'
+        @value={{this.user.email}}
         name='Email'
         id='Email-input'
         placeholder='Enter your email here'
+        required
       />
     </div>
     <div class='form-group'>
 
       <label for='Massage-input'>Massage</label>
-      <textarea
+      <Textarea
+        @value={{this.user.massage}}
         name='Massage'
         id='Massage-input'
         cols='30'
         rows='10'
         placeholder='Enter your massage here'
-      ></textarea>
+        required
+      />
     </div>
-
-    <input class='submit-btn' type='submit' value='Send' />
+    <button
+      class='submit-btn'
+      type='button'
+      {{on 'click' this.submitContact}}
+    >Send</button>
 
   </form>
 
-  <img class='contact-us-img' src='./images/contact.gif' alt='Contact us' />
+  <img
+    class='contact-us-img'
+    src='./assets/images/contact.gif'
+    alt='Contact us'
+  />
 </div>
 
 {{!-- {{outlet}} --}}
