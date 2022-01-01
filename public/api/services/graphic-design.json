@@ -1,0 +1,11 @@
+{
+  "data": {
+    "type": "service",
+    "id": "graphic-design",
+    "attributes": {
+      "service-name": "Graphic Design Service",
+      "content": "Service/single content from route Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
+      "image": "./assets/images/graphic_design_single.gif"
+    }
+  }
+}

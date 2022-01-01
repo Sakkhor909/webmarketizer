@@ -1,0 +1,11 @@
+{
+  "data": {
+    "type": "service",
+    "id": "web-development",
+    "attributes": {
+      "service-name": "Web Development Service",
+      "content": "Service/single content from route Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
+      "image": "./assets/images/web_development_single.gif"
+    }
+  }
+}

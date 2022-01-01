@@ -1,17 +1,9 @@
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
 
 export default class ServicesServiceRoute extends Route {
+  @service store;
   async model(params) {
-    const { service_slug } = params;
-
-    let response = await fetch(`/api/${service_slug}.json`).catch((error) => {
-      console.log(
-        `There is an error with single service data fetching ${error}`
-      );
-    });
-
-    let parsed = await response.json();
-
-    return parsed.data;
+    return this.store.findRecord('service', params.service_slug);
   }
 }

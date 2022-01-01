@@ -1,7 +1,8 @@
 import Model, { attr } from '@ember-data/model';
 
-export default class ServiceModel extends Model {
-  @attr id;
-  @attr icon;
-  @attr name;
+export default class ServicesModel extends Model {
+  @attr ServiceName;
+  @attr content;
+  @attr image;
+  @attr link;
 }
