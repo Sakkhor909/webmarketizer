@@ -71,12 +71,16 @@ header {
     .identy {
       text-align: center;
       flex-direction: column;
+      h1 {
+        margin-left: 0px;
+        margin-top: 15px;
+      }
       .logo {
         width: 20vw;
       }
     }
 
-    .social-link-section {
+    .right-section {
       display: none;
     }
   }
