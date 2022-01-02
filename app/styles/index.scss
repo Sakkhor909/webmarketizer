@@ -1,3 +1,18 @@
+.call-to-action-btn {
+  background-color: var(--Primary-color);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: whitesmoke;
+  margin-top: 20px;
+  font-weight: normal;
+  transition: 500ms transform;
+  &:hover {
+    background-color: #3db5fa;
+    transform: translateY(-2px);
+  }
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 768px) {
   .hero-text {
