@@ -13,7 +13,9 @@ export default modifier(function typeWritter(element) {
   let runAnimation;
 
   window.onfocus = function () {
-    if (window.location.href == 'http://localhost:4200/') {
+    if (
+      window.location.href == 'https://lucid-lichterman-15d1cf.netlify.app/'
+    ) {
       window.location.reload();
       runAnimation = setInterval(run, 12000);
     }

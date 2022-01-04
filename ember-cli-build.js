@@ -8,6 +8,10 @@ module.exports = function (defaults) {
     sassOptions: {
       extension: 'scss',
     },
+    dotEnv: {
+      clientAllowedKeys: ['DOMAIN_NAME'],
+      fastbootAllowedKeys: ['MY_API_SECRET', 'MY_OTHER_API_SECRET'],
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated

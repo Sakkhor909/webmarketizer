@@ -4,6 +4,7 @@ module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'web-marketizer',
     environment,
+    DOMAIN_NAME: process.env.DOMAIN_NAME,
     contentSecurityPolicy: {
       'script-src': "'self' 'unsafe-eval' apis.google.com",
       'frame-src': "'self' https://*.firebaseapp.com",
@@ -11,18 +12,6 @@ module.exports = function (environment) {
     },
     rootURL: '/',
     locationType: 'auto',
-    // firebase: 'https://YOUR-FIREBASE-NAME.firebaseio.com/',
-    // firebase: {
-    //   apiKey: 'AIzaSyC5JwEyipD3VOY8e6AMnE1DvFkNz_d44Yo',
-    //   authDomain: 'https://web-marketizer.firebaseio.com',
-    //   databaseURL:
-    //     'https://web-marketizer-default-rtdb.asia-southeast1.firebasedatabase.app',
-    //   projectId: 'web-marketizer',
-    //   storageBucket: 'web-marketizer.appspot.com',
-    //   messagingSenderId: '674296547873',
-    //   appId: '1:674296547873:web:2999c2cfb64de038ec3160',
-    //   measurementId: 'G-XC2EF96PQY',
-    // },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
