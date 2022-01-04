@@ -1,0 +1,53 @@
+footer {
+  display: none;
+}
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  footer {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    .social-link-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 2rem;
+      cursor: pointer;
+      .social-link {
+        transition: 0.5s transform;
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+      .fab {
+        font-size: 2rem;
+      }
+      .fa-facebook {
+        color: #0879e9;
+      }
+      .fa-linkedin {
+        color: #0a66c2;
+      }
+
+      .fiverr-logo {
+        width: 25px;
+      }
+    }
+    .text-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      border-top: 1px solid var(--Secondery-color);
+      margin-top: 2rem;
+      .modal-link {
+        margin: 5px 0;
+      }
+      .copy-right-text {
+        margin-top: 10px;
+        color: var(--Secondery-color);
+      }
+    }
+  }
+}

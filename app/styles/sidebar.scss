@@ -63,6 +63,9 @@ aside {
       &:last-child {
         border-bottom: 1px solid var(--black);
       }
+      i {
+        font-size: 1.5rem;
+      }
     }
   }
 }

@@ -7,7 +7,7 @@
         "service-name": "Graphic Design",
         "link": "graphic-design",
         "content": "Service/content from route Lorem  Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
-        "image": "./assets/images/graphicdesigner.gif",
+        "image": "/assets/images/graphicdesigner.gif",
         "animation": "1"
       }
     },
@@ -18,7 +18,7 @@
         "service-name": "Web Development",
         "link": "web-development",
         "content": "Service/content from route Lorem  Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
-        "image": "./assets/images/webdeveloper.gif",
+        "image": "/assets/images/webdeveloper.gif",
         "animation": "2"
       }
     },
@@ -29,7 +29,7 @@
         "service-name": "Digital Marketing",
         "link": "digital-marketing",
         "content": "Service/content from route Lorem  Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
-        "image": "./assets/images/digitalmarketer.gif",
+        "image": "/assets/images/digitalmarketer.gif",
         "animation": "3"
       }
     }

@@ -1,0 +1,47 @@
+{{!-- {{yield}} --}}
+
+<footer>
+  <div class='social-link-section'>
+    <a
+      href='https://www.fiverr.com/'
+      target='_blank'
+      class='social-link tooltip-fiverr'
+      rel='noopener noreferrer'
+    ><img
+        class='fiverr-logo'
+        src='./assets/images/fiverr.png'
+        alt='fiverr'
+      /></a>
+    <a
+      href='https://www.facebook.com/WebMarketizer'
+      target='_blank'
+      class='social-link tooltip-fb'
+      rel='noopener noreferrer'
+    ><i class='fab fa-facebook'></i></a>
+    <a
+      href='https://linkedin.com'
+      target='_blank'
+      class='social-link tooltip-linkedin'
+      rel='noopener noreferrer'
+    ><i class='fab fa-linkedin'></i></a>
+  </div>
+
+  <div class='text-section'>
+    <LinkTo
+      @route='privacy-policy'
+      class='modal-link'
+      {{on 'click' @clickedOutside}}
+    >
+      Privacy Policy
+    </LinkTo>
+    <LinkTo
+      @route='terms-and-conditions'
+      class='modal-link'
+      {{on 'click' @clickedOutside}}
+    >
+      Terms and Conditions
+    </LinkTo>
+    <div class='copy-right-text'> © 2022 All Rights Reserved</div>
+  </div>
+
+</footer>

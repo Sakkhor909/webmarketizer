@@ -47,6 +47,8 @@ a {
 
 @import 'header';
 
+@import 'footer';
+
 @import 'sidebar';
 
 @import 'index';
@@ -86,12 +88,5 @@ a {
     flex-direction: column;
     margin-top: 15px;
     width: 100%;
-    h2 {
-      width: 100%;
-      text-align: center;
-    }
-    .hero-img {
-      width: 100%;
-    }
   }
 }

@@ -10,17 +10,17 @@ export default modifier(function typeWritter(element) {
     addText();
   };
   run();
-  let runAnimation = setInterval(run, 12000);
+  let runAnimation;
 
-  // window.onfocus = function () {
-  //   if (window.location.href == 'http://localhost:4200/') {
-  //     window.location.reload();
-  //     runAnimation = setInterval(run, 12000);
-  //   }
-  // };
-  // window.onblur = function () {
-  //   clearInterval(runAnimation);
-  // };
+  window.onfocus = function () {
+    if (window.location.href == 'http://localhost:4200/') {
+      window.location.reload();
+      runAnimation = setInterval(run, 12000);
+    }
+  };
+  window.onblur = function () {
+    clearInterval(runAnimation);
+  };
 
   const Text = [
     'This Text is for web developing banner!',
