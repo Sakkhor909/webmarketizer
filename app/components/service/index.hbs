@@ -1,10 +1,5 @@
-<LinkTo
-  class={{concat
-    'service-container hover-effect services-animi-up-'
-    @service.animation
-  }}
-  @route='services.service'
-  @model={{@service.link}}
+<div
+  class={{concat 'service-container services-animi-up-' @service.animation}}
   {{remove-class}}
 >
   <Service::Image
@@ -14,4 +9,7 @@
   />
   <h2>{{@service.ServiceName}}</h2>
   <p>{{@service.content}}</p>
-</LinkTo>
+  <LinkTo class='view-btn' @route='services.service' @model={{@service.link}}>
+    View Details
+  </LinkTo>
+</div>

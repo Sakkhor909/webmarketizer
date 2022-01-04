@@ -6,7 +6,7 @@
       "attributes": {
         "service-name": "Graphic Design",
         "link": "graphic-design",
-        "content": " Service/content from route Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
+        "content": "Service/content from route Lorem  Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
         "image": "./assets/images/graphicdesigner.gif",
         "animation": "1"
       }
@@ -17,7 +17,7 @@
       "attributes": {
         "service-name": "Web Development",
         "link": "web-development",
-        "content": "Service/ content from route Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
+        "content": "Service/content from route Lorem  Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
         "image": "./assets/images/webdeveloper.gif",
         "animation": "2"
       }
@@ -28,7 +28,7 @@
       "attributes": {
         "service-name": "Digital Marketing",
         "link": "digital-marketing",
-        "content": "Service/ content from route Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
+        "content": "Service/content from route Lorem  Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis...",
         "image": "./assets/images/digitalmarketer.gif",
         "animation": "3"
       }

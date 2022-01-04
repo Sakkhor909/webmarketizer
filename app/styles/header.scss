@@ -34,7 +34,7 @@ header {
     align-items: center;
     column-gap: 2rem;
     .heading-massage {
-      color: #30475e;
+      color: var(--Secondery-color);
       font-weight: bolder;
     }
     .social-link-section {
@@ -71,7 +71,7 @@ header {
       }
       .fas {
         font-size: 2rem;
-        color: #30475e;
+        color: var(--Secondery-color);
         border: none;
       }
     }
