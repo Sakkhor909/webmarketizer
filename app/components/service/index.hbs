@@ -1,9 +1,11 @@
-{{!-- {{yield}} --}}
-
 <LinkTo
-  class='service-container'
+  class={{concat
+    'service-container hover-effect services-animi-up-'
+    @service.animation
+  }}
   @route='services.service'
   @model={{@service.link}}
+  {{remove-class}}
 >
   <Service::Image
     class='services-img'

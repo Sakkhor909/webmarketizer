@@ -74,3 +74,37 @@
     }
   }
 }
+
+/* Animations */
+
+.contact-animi-left {
+  animation-name: contact-animi-left;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+}
+
+@keyframes contact-animi-left {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.contact-animi-up {
+  animation-name: contact-animi-up;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+}
+
+@keyframes contact-animi-up {
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

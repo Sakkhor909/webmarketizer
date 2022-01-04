@@ -15,4 +15,6 @@ Router.map(function () {
   this.route('clients');
   this.route('about');
   this.route('contact');
+  this.route('privacy-policy');
+  this.route('terms-and-conditions');
 });

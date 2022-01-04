@@ -32,6 +32,15 @@
         rel='noopener noreferrer'
       ><i class='fab fa-linkedin'></i></a>
     </div>
+    <div class='modal-section'>
+      <button type='button' class='modal-btn' {{on 'click' this.showModal}}><i
+          class='fas fa-th-large'
+        ></i></button>
+      {{#if this.showingModal}}
+        <Header::modal @clickedOutside={{this.hideModal}} />
+      {{/if}}
+    </div>
+
   </div>
 
 </header>

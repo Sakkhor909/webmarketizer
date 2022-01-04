@@ -1,0 +1,26 @@
+.modal-section {
+  .modal {
+    position: absolute;
+    overflow: auto;
+    right: 0rem;
+    top: 5rem;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    padding: 1.5rem 1rem;
+    .modal-link {
+      color: var(--black);
+      &:hover {
+        color: var(--Primary-color);
+      }
+    }
+    .copy-right-text {
+      margin-top: 10px;
+      color: #30475e;
+    }
+  }
+}

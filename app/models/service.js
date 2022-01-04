@@ -5,4 +5,5 @@ export default class ServicesModel extends Model {
   @attr content;
   @attr image;
   @attr link;
+  @attr animation;
 }

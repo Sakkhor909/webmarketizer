@@ -29,3 +29,42 @@
 }
 
 // @include tool-tip();
+
+/* animations */
+
+@mixin animi-left($animation-duration: 2s) {
+  animation-name: animi-left;
+  animation-duration: $animation-duration;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+}
+
+@keyframes animi-left {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+// @include animi-left();
+
+@mixin animi-down($animation-duration: 2s) {
+  animation-name: animi-down;
+  animation-duration: $animation-duration;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+  animation-delay: 3s;
+}
+
+@keyframes animi-down {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(500px);
+  }
+}
+
+// @include animi-down();

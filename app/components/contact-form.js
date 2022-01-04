@@ -9,7 +9,8 @@ export default class ContactComponent extends Component {
     massage: '',
   };
   @action
-  submitContact() {
+  submitContact(event) {
+    event.preventDefault();
     alert(
       `Name is ${this.user.name} , Email is  ${this.user.email}, massage is ${this.user.massage}`
     );

@@ -1,0 +1,19 @@
+{{!-- {{yield}} --}}
+
+<div class='modal' {{on-click-outside @clickedOutside}}>
+  <LinkTo
+    @route='privacy-policy'
+    class='modal-link'
+    {{on 'click' @clickedOutside}}
+  >
+    Privacy Policy
+  </LinkTo>
+  <LinkTo
+    @route='terms-and-conditions'
+    class='modal-link'
+    {{on 'click' @clickedOutside}}
+  >
+    Terms and Conditions
+  </LinkTo>
+  <div class='copy-right-text'> © 2022 All Rights Reserved</div>
+</div>
