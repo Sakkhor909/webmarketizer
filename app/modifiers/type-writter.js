@@ -10,14 +10,11 @@ export default modifier(function typeWritter(element) {
     addText();
   };
   run();
-  let runAnimation;
+  let runAnimation = setInterval(run, 12000);
 
   window.onfocus = function () {
-    if (
-      window.location.href == 'https://lucid-lichterman-15d1cf.netlify.app/'
-    ) {
+    if (document.querySelector('.active').dataset.tooltip == 'Home') {
       window.location.reload();
-      runAnimation = setInterval(run, 12000);
     }
   };
   window.onblur = function () {

@@ -27,18 +27,10 @@
   </div>
 
   <div class='text-section'>
-    <LinkTo
-      @route='privacy-policy'
-      class='modal-link'
-      {{on 'click' @clickedOutside}}
-    >
+    <LinkTo @route='privacy-policy' class='modal-link'>
       Privacy Policy
     </LinkTo>
-    <LinkTo
-      @route='terms-and-conditions'
-      class='modal-link'
-      {{on 'click' @clickedOutside}}
-    >
+    <LinkTo @route='terms-and-conditions' class='modal-link'>
       Terms and Conditions
     </LinkTo>
     <div class='copy-right-text'> © 2022 All Rights Reserved</div>
